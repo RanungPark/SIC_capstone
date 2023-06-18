@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import PdfView from '../PdfView/PdfView';
 import ImageView from '../ImageView/ImageView';
-// import axios from 'axios';
-
-// Initialize the pdfjs worker
 
 export default function InputData() {
   const [file, setFile] = useState(null);
@@ -23,7 +20,7 @@ export default function InputData() {
     const selectedImage = event.target.files[0];
     setFileName(selectedImage.name.slice(-3))
     if(selectedImage) {
-      setImage(selectedImage);
+      setImage(URL.createObjectURL(selectedImage));
     }
   }
 
