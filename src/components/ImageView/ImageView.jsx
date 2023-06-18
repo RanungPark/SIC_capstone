@@ -1,10 +1,13 @@
 import React from 'react';
 
-export default function ImageView({fileName}) {
+export default function ImageView({image}) {
   return (
-    <div>
-      {fileName}
-    </div>
+    <>
+    {
+      image && <img src={image} alt='이미지' className='render-image'>
+      </img>
+    }
+    </>
   );
 }
 
