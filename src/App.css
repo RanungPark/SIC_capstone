@@ -11,3 +11,10 @@
   width: 50% !important;
   height: 50% !important;
 }
+
+.render-image {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+}
